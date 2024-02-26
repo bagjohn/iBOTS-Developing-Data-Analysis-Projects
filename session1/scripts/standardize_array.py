@@ -10,4 +10,7 @@ input_array = np.load(input_array_path)
 output_array = (input_array - np.mean(input_array)) / np.std(input_array)
 
 # Save the standardized array
+import os
+os.mkdir(output_array_path)
+
 np.save(output_array_path, output_array)
