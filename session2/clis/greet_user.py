@@ -8,6 +8,7 @@ parser.add_argument('name', type=str, help='Name of the user')
 
 # Parse the arguments
 args = parser.parse_args()
+print(type(args))
 
 # Print the greeting
 print(f'Hello, {args.name}!')
