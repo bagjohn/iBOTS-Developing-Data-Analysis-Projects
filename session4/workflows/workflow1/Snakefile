@@ -19,6 +19,7 @@ rule combine_two_arrays:
     run:
         #test 3
         # test 4
+        # test 5
         #test2
         import numpy as np
         array1 = np.load(input[0])
