@@ -5,7 +5,8 @@ p=argparse.ArgumentParser(description='Array')
 
 p.add_argument('input', type=str, help='Input filepath')
 p.add_argument('output', type=str, help='Output filepath')
-p.add_argument('transformation', choices=['norm', 'std'], help='Type of array transformation to apply')
+p.add_argument('--transformation', type=str, default='std', help='Type of array transformation to apply')
+# p.add_argument('transformation', choices=['norm', 'std'], help='Type of array transformation to apply')
 
 args=p.parse_args()
 
