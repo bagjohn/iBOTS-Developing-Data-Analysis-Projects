@@ -17,6 +17,7 @@ rule combine_two_arrays:
     output:
         "data/processed/combined_array.npy"
     run:
+        #test
         import numpy as np
         array1 = np.load(input[0])
         array2 = np.load(input[1])
